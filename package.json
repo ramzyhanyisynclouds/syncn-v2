@@ -1,0 +1,36 @@
+{
+  "name": "user",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.9.0",
+    "@selemondev/vue3-marquee": "^0.0.8",
+    "@vueuse/core": "^14.1.0",
+    "better-sqlite3": "^12.5.0",
+    "class-variance-authority": "^0.7.1",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.556.0",
+    "nuxt": "^4.2.2",
+    "reka-ui": "^2.6.1",
+    "tailwind-merge": "^3.4.0",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "shadcn-nuxt": "^2.4.3",
+    "tailwindcss": "3.3",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
