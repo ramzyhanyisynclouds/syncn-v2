@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
-mode.value = "light";
 
 import { useAppearance } from '@/composables/useAppearance';
 const { appearance } = useAppearance();
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "~/ui/badge";
+import { Button } from "~/ui/button";
 import { ArrowRight } from "lucide-vue-next";
 import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 
@@ -96,19 +93,17 @@ const k = computed(() => ({
 
                 <div class="space-y-4 md:space-y-0 md:space-x-4">
                     <Button as-child class="w-5/6 md:w-1/4 font-bold group/arrow !text-white">
-                        <a href="/login" class="!text-white">
+                        <NuxtLink to="/login" class="!text-white">
                             Get Started
                             <ArrowRight class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-                        </a>
+                        </NuxtLink>
                     </Button>
 
                     <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
-                        <a href="/contact" target="_blank">
+                        <NuxtLink to="/contact">
                             Contact SyncN
-                        </a>
-
+                        </NuxtLink>
                     </Button>
-                    
                 </div>
              
             </div>
