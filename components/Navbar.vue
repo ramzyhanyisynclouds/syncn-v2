@@ -74,14 +74,14 @@ const routeList: RouteProps[] = [
 ]
 
 const technologiesList: TechnologiesProps[] = [
-  { title: 'Smart Homes', description: 'Create and manage smart home device apps and cloud.', href: '/smart_homes' },
-  { title: 'Smart Farming', description: 'IoT solutions to cultivate smarter, yield better and farm sustainably.', href: '/smart_farming' },
-  { title: 'Smart Cities', description: 'Prototype rapidly and launch integrated IoT ecosystems.', href: '/smart_cities' },
+  { title: 'Smart Homes', description: 'Create and manage smart home device apps and cloud.', href: '/Technologies/smart_homes' },
+  { title: 'Smart Farming', description: 'IoT solutions to cultivate smarter, yield better and farm sustainably.', href: '/Technologies/smart_farming' },
+  { title: 'Smart Cities', description: 'Prototype rapidly and launch integrated IoT ecosystems.', href: '/Technologies/smart_cities' },
 ]
 
 const ResourcesList: ResourcesProps[] = [
-  { title: 'Blogs', description: 'Company news, product updates, and new platform features.', href: '/blogs' },
-  { title: 'Content Hub', description: 'Get access to exclusive content derived from practical IoT application and success stories', href: '/content_hub' },
+  { title: 'Blogs', description: 'Company news, product updates, and new platform features.', href: '/Resources/Blogs' },
+  { title: 'Content Hub', description: 'Get access to exclusive content derived from practical IoT application and success stories', href: '/Resources/content_hub' },
   { title: 'Case Studies', description: 'Learn success stories of businesses like yours that built IoT products and connected services with Blynk Platform.', href: '/Resources/casestudies' },
 ]
 
@@ -93,7 +93,7 @@ const ResourcesList: ResourcesProps[] = [
   <Announcement class="sticky top-0 z-40 mx-auto flex items-center justify-between bg-card p-2 shadow-md" />
 
   <header :class="[
-    'header-base bg-card top-15 overflow-visible z-[999]',
+    'header-base bg-card top-14 overflow-visible z-[999]',
     appearance === 'light' ? 'shadow-light' : 'shadow-dark',
     isScrolled ? 'header-scrolled' : 'header-normal'
   ]">

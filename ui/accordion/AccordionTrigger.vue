@@ -4,7 +4,7 @@ import {
   AccordionHeader,
   AccordionTrigger,
   type AccordionTriggerProps,
-} from "radix-vue";
+} from "reka-ui";
 import { Plus } from "lucide-vue-next";
 import { cn } from "@/lib/utils";
 

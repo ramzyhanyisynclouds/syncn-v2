@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@motionone/vue": "^10.16.4",
     "@nuxt/content": "^3.9.0",
     "@selemondev/vue3-marquee": "^0.0.8",
     "@vueuse/core": "^14.1.0",

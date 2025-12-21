@@ -38,13 +38,13 @@ mode.value = "light";
         <!-- Technologies - Mobile: show below logo -->
         <div class="flex flex-col gap-2 max-sm:hidden">
           <h3 class="font-bold text-lg max-sm:text-base">Technologies</h3>
-          <a href="/smart_homes" class="opacity-60 hover:opacity-100">
+          <a href="/Technologies/smart_homes" class="opacity-60 hover:opacity-100">
             Smart Homes
           </a>
-          <a href="/smart_farming" class="opacity-60 hover:opacity-100">
+          <a href="/Technologies/smart_farming" class="opacity-60 hover:opacity-100">
             Smart Farming
           </a>
-          <a href="/smart_cities" class="opacity-60 hover:opacity-100">
+          <a href="/Technologies/smart_cities" class="opacity-60 hover:opacity-100">
             Smart Cities
           </a>
         </div>
@@ -52,11 +52,11 @@ mode.value = "light";
         <!-- Resources - Mobile: show below logo -->
         <div class="flex flex-col gap-2 max-sm:hidden">
           <h3 class="font-bold text-lg max-sm:text-base">Resources</h3>
-          <a href="/blogs" class="opacity-60 hover:opacity-100">Blogs</a>
-          <a href="/content_hub" class="opacity-60 hover:opacity-100">
+          <a href="/Resources/Blogs" class="opacity-60 hover:opacity-100">Blogs</a>
+          <a href="/Resources/content_hub" class="opacity-60 hover:opacity-100">
             Content Hub
           </a>
-          <a href="/case_studies" class="opacity-60 hover:opacity-100">
+          <a href="/Resources/casestudies" class="opacity-60 hover:opacity-100">
             Case Studies
           </a>
         </div>
@@ -64,14 +64,14 @@ mode.value = "light";
         <!-- Help - Mobile: show below logo -->
         <div class="flex flex-col gap-2 max-sm:hidden">
           <h3 class="font-bold text-lg max-sm:text-base">Help</h3>
-          <a href="#contact" class="opacity-60 hover:opacity-100">
+          <a href="/contact" class="opacity-60 hover:opacity-100">
             Contact Us
           </a>
-          <a href="#faq" class="opacity-60 hover:opacity-100">FAQ</a>
+          <a href="#faQq" class="opacity-60 hover:opacity-100">FAQ</a>
           <a href="#DownloadApplication" class="opacity-60 hover:opacity-100">
             Download App
           </a>
-          <a href="/privacy-policy" class="opacity-60 hover:opacity-100">
+          <a href="/privacy" class="opacity-60 hover:opacity-100">
             Privacy Policy
           </a>
         </div>
@@ -128,11 +128,11 @@ mode.value = "light";
               <a href="#contact" class="opacity-60 hover:opacity-100 text-base">
                 Contact Us
               </a>
-              <a href="#faq" class="opacity-60 hover:opacity-100 text-base">FAQ</a>
+              <a href="#faQq" class="opacity-60 hover:opacity-100 text-base">FAQ</a>
               <a href="#DownloadApplication" class="opacity-60 hover:opacity-100 text-base">
                 Download App
               </a>
-              <a href="/privacy-policy" class="opacity-60 hover:opacity-100 text-base">
+              <a href="/privacy" class="opacity-60 hover:opacity-100 text-base">
                 Privacy Policy
               </a>
             </div>

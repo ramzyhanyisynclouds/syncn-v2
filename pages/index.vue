@@ -10,6 +10,11 @@ import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 
 import heroImageLight from '../assets/public/hero-light.png';
 import heroImageDark from '../assets/public/hero-dark.png';
+import HowItWorks from '~/components/about/HowItWorks.vue'
+import Sponsors from '~/components/Sponsors.vue'
+import DownloadApplication from '~/components/DownloadApplication.vue'
+import FAQq from '~/components/FAQq.vue';
+
 
 const heroImg = ref<HTMLElement | null>(null);
 
@@ -129,6 +134,12 @@ const k = computed(() => ({
             </div>
         </div>
     </section>
+        <Sponsors/>
+<Features />
+    <HowItWorks />
+    <contact/>
+    <FAQq/>
+    <DownloadApplication/>
 </template>
 
 <style scoped>
