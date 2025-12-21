@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import Navbar from "../components/Navbar.vue";
 import "@selemondev/vue3-marquee/dist/style.css";
-import Footer from "../components/Footer.vue";
-import blogOne from '@/public/blogOne.webp'
-import Separator from '../components/ui/separator/Separator.vue';
+import blogOne from '@/assets/public/blogOne.webp'
+import Separator from '../ui/separator/Separator.vue';
 </script>
 
 
 <template>
-    <Navbar />
         <div class="max-w-screen-xl mx-auto gap-8 my-12">
             <section class="lg:flex py-4 px-4">
                 <div class="lg:w-1/2 gap-8">
@@ -22,7 +19,7 @@ import Separator from '../components/ui/separator/Separator.vue';
 
                 </div>
                 <div class="lg:w-1/2 h-auto">
-                    <img :src="blogOne" alt="Aquascape" class="w-full h-50 rounded-md object-cover blog_img" />
+                    <img :src="blogOne" alt="Aquascape" class="w-full h-50 rounded-md object-cover " />
                 </div>
             </section>
         </div>
@@ -37,7 +34,6 @@ import Separator from '../components/ui/separator/Separator.vue';
             </span>
         </section>
     </div>
-    <Footer />
 </template>
 <style scoped>
 

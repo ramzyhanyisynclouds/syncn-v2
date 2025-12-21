@@ -36,7 +36,7 @@ const reviewList: ReviewProps[] = [
         userName: "Frontend Developer",
         comment: " For nearly a decade, we brought you cutting-edge.",
         rating: 5.0,
-        link: "/single_blog",
+        link: "/Resources/SingleBlog",
         thumbnail: blogOne,
     },
     {
@@ -45,7 +45,7 @@ const reviewList: ReviewProps[] = [
         userName: "UI/UX Designer",
         comment: "Stellantis Adds Connectivity for Smart Fleet.",
         rating: 4.8,
-        link: "/single_blog",
+        link: "/Resources/SingleBlog",
         thumbnail: blogTwo,
     },
     {
@@ -54,7 +54,7 @@ const reviewList: ReviewProps[] = [
         userName: "mobile developer",
         comment: "Next-Generation Car Connectivity Featured ",
         rating: 4.9,
-        link: "/single_blog",
+        link: "/Resources/SingleBlog",
         thumbnail: blogThree,
     },
 ];
@@ -90,8 +90,8 @@ const reviewList: ReviewProps[] = [
                 <!-- Item 1 -->
                 <div class="flex items-center justify-between border-b pb-4">
                     <div class="flex items-center gap-4">
-                        <a href="/" ><img :src="blogOne" alt="Aquascape" class="w-16 h-16 rounded-md object-cover" /></a>
-                        <a href="/" >
+                        <a href="/Resources/SingleBlog" ><img :src="blogOne" alt="Aquascape" class="w-16 h-16 rounded-md object-cover" /></a>
+                        <a href="/Resources/SingleBlog" >
                             <p class="text-sm md:text-base font-medium text-gray-800">
                                 For nearly a decade, we brought you cutting-edge...
                             </p>
@@ -103,11 +103,11 @@ const reviewList: ReviewProps[] = [
                 <!-- Item 2 -->           
                 <div class="flex items-center justify-between border-b pb-4">
                     <div class="flex items-center gap-4">
-                        <a href="" >
+                        <a href="/Resources/SingleBlog" >
                
 
                             <img :src="blogTwo" alt="Plantaform" class="w-16 h-16 rounded-md object-cover" /></a>
-                        <a href="" >
+                        <a href="/Resources/SingleBlog" >
                         <p class="text-sm md:text-base font-medium text-gray-800">
                             Plantaform: bringing NASA technology to indoor gardening
                         </p>

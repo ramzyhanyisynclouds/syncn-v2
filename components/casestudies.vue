@@ -213,7 +213,7 @@ const smartHome: ReviewProps[] = [
                         <img
                             :src="review.thumbnail"
                             :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
+                            class="w-full object-cover rounded-xl "
                         />
                     </a>
                     <div class="flex flex-col justify-between gap-2 pt-3 pb-4">
@@ -232,9 +232,12 @@ const smartHome: ReviewProps[] = [
                                     <div class="text-sm text-muted-foreground">{{ review.userName }}</div>
                                 </div>
                             </CardHeader>
-                            <a
+                           
+                        </div>
+                        <div>
+                             <a
                                 :href="review.link"
-                                class="items-center p-3 border rounded-4xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
+                                class="items-center p-3 border rounded-3xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
                             >
                                 Read Case Study
                             </a>
@@ -260,7 +263,7 @@ const smartHome: ReviewProps[] = [
                         <img
                             :src="review.thumbnail"
                             :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
+                            class="w-full object-cover rounded-xl "
                         />
                     </a>
                     <div class="flex flex-col justify-between gap-2 pt-3 pb-4">
@@ -279,14 +282,18 @@ const smartHome: ReviewProps[] = [
                                     <div class="text-sm text-muted-foreground">{{ review.userName }}</div>
                                 </div>
                             </CardHeader>
-                            <a
+                           
+                        </div>
+                       
+                    </div>
+                     <div  > 
+                             <a
                                 :href="review.link"
-                                class="items-center p-3 border rounded-4xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
+                                class="items-center p-3 border rounded-3xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
                             >
                                 Read Case Study
                             </a>
                         </div>
-                    </div>
                 </Card>
             </div>
         </section>
@@ -307,7 +314,7 @@ const smartHome: ReviewProps[] = [
                         <img
                             :src="review.thumbnail"
                             :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
+                            class="w-full object-cover rounded-xl "
                         />
                     </a>
                     <div class="flex flex-col justify-between gap-2 pt-3 pb-4">
@@ -326,9 +333,12 @@ const smartHome: ReviewProps[] = [
                                     <div class="text-sm text-muted-foreground">{{ review.userName }}</div>
                                 </div>
                             </CardHeader>
+                            
+                        </div>
+                        <div>
                             <a
                                 :href="review.link"
-                                class="items-center p-3 border rounded-4xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
+                                class="items-center p-3 border rounded-3xl gap-1 text-primary readmore hover:opacity-80 transition mt-2"
                             >
                                 Read Case Study
                             </a>
@@ -346,7 +356,7 @@ const smartHome: ReviewProps[] = [
                 <span class="text-[23px] text-white block mb-8">Contact us for a free consultation with our engineers and IoT business experts</span>
                 <a
                     href="/contact"
-                    class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
+                    class="contact items-center p-3 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
                 >
                     Contact US
                 </a>

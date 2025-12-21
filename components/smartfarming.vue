@@ -70,7 +70,7 @@ const scrollDown = () => {
                 <span class="mb-4">Cultivate smarter, increase yields, and manage your farm sustainably with SyncN’s unified IoT platform.</span>
             </div>
             <div>
-                <a href="/contact" class="contact readmore mt-2 items-center gap-1 rounded-4xl border bg-[#40eef3] p-3 transition hover:opacity-80">
+                <a href="/contact" class="contact readmore mt-2 items-center gap-1 rounded-3xl border bg-[#40eef3] p-3 transition hover:opacity-80">
                     Contact Sales →
                 </a>
             </div>
@@ -95,7 +95,7 @@ const scrollDown = () => {
                 other aspects:</span
             >
         </div>
-        <div class="monitor flex flex-wrap px-4 pt-8 pb-12">
+        <div class="monitor flex flex-wrap px-4 pt-2 pb-12">
             <div class="power-farming pb-12 lg:w-1/4">
                 <Cloud width="30" height="30" class="mb-4 text-[#5572d3]" />
                 <span class="mb-8 block text-2xl font-semibold">Location Services</span>
@@ -108,7 +108,7 @@ const scrollDown = () => {
             </div>
             <div class="power-farming pb-12 lg:w-1/4">
                 <Cpu width="30" height="30" class="mb-4 text-[#5572d3]" />
-                <span class="mb-8 block text-2xl font-semibold">Data Analytics & Forecasting</span>
+                <span class="mb-8 block text-2xl font-semibold">Data  & Forecasting</span>
                 <p class="mt-2">AI-driven insights to forecast yields, optimize planting cycles, and predict irrigation needs.</p>
             </div>
             <div class="power-farming pb-12 lg:w-1/4">

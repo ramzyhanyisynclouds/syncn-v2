@@ -34,55 +34,43 @@ const scrollDown = () => {
 
 <template>
     <section class="banner_case flex align-items-center gap-8 -mt-5">
-        <div class="spacing lg:w-1/2">
-            <div class="banner_title">
-                <span class="text-white font-bold ">Make Your Home <span class=" font-bold text-[#40eef3]">Smarter</span>  , Fully Connected, Fully Controlled.</span>
+        <div class="md:w-full">
+            <div class="spacing banner_title">
+                <span class="text-white font-bold ">Make Your Home <span
+                        class=" font-bold text-[#40eef3]">Smarter</span> , Fully Connected, Fully Controlled.</span>
 
             </div>
-            <div class="banner_des">
-                <span class="mb-4">Transform your home into a smart living ecosystem you control from one intuitive app.With SyncN</span>
+            <div class="spacing banner_des">
+                <span class="mb-4">Transform your home into a smart living ecosystem you control from one intuitive
+                    app.With SyncN</span>
                 <span>, you can launch a fully functional smart home experience in just 2 weeks,
- no coding, no complex setup, no hassle.</span>
+                    no coding, no complex setup, no hassle.</span>
+                <div>
+                    <a href="/contact"
+                        class=" contact items-center  p-2 border rounded-3xl   readmore hover:opacity-80 transition  bg-[#40eef3]">
+                        Contact Sales →
+                    </a>
+                </div>
             </div>
-            <div>
-                <a
-                    href="/contact"
-                    class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-                >
-                    Contact Sales →
-                </a>
-            </div>
+
         </div>
         <div class="hidden lg:block px-4 lg:w-1/2">
             <img :src="smartHomes" alt="Aquascape" class="w-full h-50 rounded-md object-cover blog_img" />
         </div>
     </section>
     <div class="scroll_arrow_wrapper">
-        <button
-            @click="scrollDown"
-            class="animate-bounce text-white"
-            aria-label="Scroll down"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-14 w-14"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#40eef3"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                />
+        <button @click="scrollDown" class="animate-bounce text-white" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="#40eef3">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
         </button>
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Your Smart Home <span class="text-[#40eef3]">One Platform.</span> Unlimited Possibilities.</span>
-        <div class="lg:text-[23px] text-[12px] text-start  mb-12 px-4 env-desc">SyncN brings together devices, apps, security, and automation so your entire home works beautifully in syncN.
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Your Smart Home <span
+                class="text-[#40eef3]">One Platform.</span> Unlimited Possibilities.</span>
+        <div class="lg:text-[23px] text-[12px] text-start  mb-12 px-4 env-desc">SyncN brings together devices, apps,
+            security, and automation so your entire home works beautifully in syncN.
             Whether it's lighting, climate, safety, or entertainment, everything runs through one unified system.
         </div>
     </div>
@@ -99,11 +87,12 @@ const scrollDown = () => {
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Let’s see how SyncN’s <span class="text-[#40eef3]">no-code</span> magic works</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Let’s see how SyncN’s <span
+                class="text-[#40eef3]">no-code</span> magic works</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 env-desc">
             <p class="text-xl lg:text-3xl font-bold pb-4">1. Connect Your Devices Instantly</p>
             <span>GBring your smart devices online using SyncN Cloud.
-                   Supports 400+ devices, including:</span>
+                Supports 400+ devices, including:</span>
             <div class="flex flex-wrap pt-8 gap-8">
                 <div class="w-full lg:w-1/3 connect-internet space-y-3">
                     <p class="flex items-center gap-4">
@@ -146,8 +135,11 @@ const scrollDown = () => {
             <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 w-full lg:w-1/2 grid gap-2">
                 <p class="text-xl lg:text-3xl font-bold pb-4">2. Build Your Consumer App (No Code Required)</p>
                 <div>Create a beautiful, fully branded smart home app using our no-code drag-and-drop builder.</div>
-                <div>Design real-time dashboards, add lighting and climate controls, customize device widgets, set up scenes and automations, manage user permissions, and choose between dark or light themes, all in one place.</div>
-                <div>Once your app is ready, publish it directly to the App Store and Google Play, and update the interface anytime without republishing.</div>
+                <div>Design real-time dashboards, add lighting and climate controls, customize device widgets, set up
+                    scenes and automations, manage user permissions, and choose between dark or light themes, all in one
+                    place.</div>
+                <div>Once your app is ready, publish it directly to the App Store and Google Play, and update the
+                    interface anytime without republishing.</div>
             </div>
             <div class="px-4 w-full lg:w-1/2">
                 <img :src="mobileApp" alt="Aquascape" class="w-full bg-[#f6f6f6] rounded-md object-cover" />
@@ -158,11 +150,7 @@ const scrollDown = () => {
     <div class="max-w-screen-xl mx-auto gap-8 mt-4 mb-12">
         <div class="flex flex-wrap">
             <div class="px-4 w-full lg:w-1/2">
-                <img
-                    :src="webDashboard"
-                    alt="Aquascape"
-                    class="w-full bg-[#f6f6f6] rounded-md object-cover"
-                />
+                <img :src="webDashboard" alt="Aquascape" class="w-full bg-[#f6f6f6] rounded-md object-cover" />
             </div>
             <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 w-full lg:w-1/2">
                 <p class="text-xl lg:text-3xl font-bold pb-4">
@@ -172,15 +160,15 @@ const scrollDown = () => {
                     With SyncN, you can manage your entire smart home ecosystem from a single, easy-to-use console.
                 </div>
                 <div class="mb-4">
-                    Access real-time data analytics, enjoy fully encrypted communication between devices and the cloud, and rely on 24/7 incident monitoring for complete peace of mind.
+                    Access real-time data analytics, enjoy fully encrypted communication between devices and the cloud,
+                    and rely on 24/7 incident monitoring for complete peace of mind.
                 </div>
                 <div class="mb-4">
-                    You can also push remote firmware updates (OTA) to keep every device up to date without manual intervention.
+                    You can also push remote firmware updates (OTA) to keep every device up to date without manual
+                    intervention.
                 </div>
-                <a
-                    href="/contact"
-                    class="contact-sales items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-                >
+                <a href="/contact"
+                    class="contact-sales items-center p-2 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]">
                     Contact US →
                 </a>
             </div>
@@ -188,10 +176,13 @@ const scrollDown = () => {
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4"> Deliver Better Apps, And Leave Your Competitors Behind</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4"> Deliver Better Apps, And Leave
+            Your Competitors Behind</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 env-desc">
-            <span>Over 2 million users rely on apps built with SyncN’s IoT platform. With faster performance, higher stability,
-                and seamless user experiences, your brand earns better reviews, stronger loyalty, and faster growth, right out of the gate.</span>
+            <span>Over 2 million users rely on apps built with SyncN’s IoT platform. With faster performance, higher
+                stability,
+                and seamless user experiences, your brand earns better reviews, stronger loyalty, and faster growth,
+                right out of the gate.</span>
         </div>
         <section class="max-w-screen-xl mx-auto p-8 grid gap-6 md:grid-cols-2">
             <!-- Card 1 -->
@@ -210,7 +201,8 @@ const scrollDown = () => {
                 class="second-boxes rounded-xl p-6 text-white bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 relative overflow-hidden min-h-[350px]">
                 <span class="text-3xl font-bold mb-2">Remote Control & Monitoring</span>
                 <p class="text-lg pt-4 block w-70">
-                    Let your customers monitor connected devices in real-time using their smartphones or a web dashboard.
+                    Let your customers monitor connected devices in real-time using their smartphones or a web
+                    dashboard.
                     Allow them to control devices with voice commands using Alexa or Google Home.
                 </p>
             </div>
@@ -220,7 +212,8 @@ const scrollDown = () => {
                 class="third-boxes rounded-xl p-6 text-white bg-gradient-to-br from-yellow-400 via-orange-400 to-green-400 relative overflow-hidden min-h-[350px]">
                 <span class="text-3xl font-bold mb-2">Smart automation</span>
                 <p class="text-lg pt-4 block w-70">
-                    Allow users to create scenarios that trigger automation like setting up a coffee machine to start brewing by the time they wake up.
+                    Allow users to create scenarios that trigger automation like setting up a coffee machine to start
+                    brewing by the time they wake up.
                 </p>
             </div>
 
@@ -236,9 +229,11 @@ const scrollDown = () => {
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">The <span class="text-[#40eef3]">All-in-One Platform</span> for Smarter IoT Development</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">The <span
+                class="text-[#40eef3]">All-in-One Platform</span> for Smarter IoT Development</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 env-desc">
-            <span>SyncN is a unified platform to build, launch, and enhance your smart home products, bringing every tool you need into one connected ecosystem.</span>
+            <span>SyncN is a unified platform to build, launch, and enhance your smart home products, bringing every
+                tool you need into one connected ecosystem.</span>
         </div>
         <div class="flex flex-col lg:flex-row gap-8 px-4">
             <div class="lg:w-1/4">
@@ -273,7 +268,8 @@ const scrollDown = () => {
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Choose the <span class="text-[#40eef3]">plan</span> That Fits Your Smart Home Vision</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Choose the <span
+                class="text-[#40eef3]">plan</span> That Fits Your Smart Home Vision</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 env-desc">
             <span>Try SyncN PRO for initial development, or go straight to Business
                 Plan and launch your product much faster with the help of our dedicated support engineer.</span>
@@ -308,10 +304,8 @@ const scrollDown = () => {
                     </p>
                 </div>
             </div>
-            <a
-                href="/pricing"
-                class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-            >
+            <a href="/pricing"
+                class="contact items-center p-3 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]">
                 View pricing →
             </a>
         </div>
@@ -321,11 +315,10 @@ const scrollDown = () => {
         <div class="case-contact">
             <div class="max-w-screen-xl mx-auto gap-8 mb-12 px-4">
                 <span class="text-[52px] text-white font-bold block py-8">Need an IoT solution for your business?</span>
-                <span class="text-[23px] text-white block mb-8">Contact us for a free consultation with our engineers and IoT business experts</span>
-                <a
-                    href="/contact"
-                    class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-                >
+                <span class="text-[23px] text-white block mb-8">Contact us for a free consultation with our engineers
+                    and IoT business experts</span>
+                <a href="/contact"
+                    class="contact items-center p-3 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]">
                     Contact US →
                 </a>
             </div>
@@ -340,13 +333,15 @@ const scrollDown = () => {
     width: 100%;
     margin-top: -3.5rem;
 }
+
 .scroll_arrow_wrapper {
     display: flex;
     justify-content: center;
     margin-top: -5rem;
     margin-bottom: 5rem;
 }
-.banner_title{
+
+.banner_title {
     display: flex;
     object-fit: fill;
     width: 100%;
@@ -357,10 +352,12 @@ const scrollDown = () => {
     overflow: visible;
     gap: 1rem;
 }
-.banner_title span{
+
+.banner_title span {
     font-size: 57px;
 }
-.banner_des{
+
+.banner_des {
     width: 80%;
     margin-top: 24px;
     padding-left: 114px;
@@ -372,47 +369,56 @@ const scrollDown = () => {
 }
 
 .blog_img {
-    height: 640px;
+    /* height: 640px; */
     margin-top: 72px;
 }
-.readmore:hover{
+
+.readmore:hover {
     background: #2d55a4;
     color: white;
 }
-.case-contact{
-    background: url("..//assets/public/caseStudies.webp");
+
+.case-contact {
+    background: url("../assets/public/caseStudies.webp");
     background-size: cover;
     height: 530px;
     padding: 8em 0;
 }
-.contact{
+
+.contact {
     color: white;
     margin-left: 40px;
 }
-.connect-internet{
+
+.connect-internet {
     gap: 3rem;
     display: grid;
 }
-.list-disc{
+
+.list-disc {
     list-style: disc;
     padding-left: 2rem;
     padding-bottom: 2rem;
 }
+
 .list-disc li::marker {
     color: #5572d3;
 }
-.contact-sales{
+
+.contact-sales {
     color: white;
     margin-left: 15px;
 }
+
 .first-boxes {
     background-image:
         url("../assets/public/four-boxes.webp"),
-        linear-gradient(to bottom right, rgba(34,197,94,0.8), rgba(45,212,191,0.8), rgba(59,130,246,0.8));
+        linear-gradient(to bottom right, rgba(34, 197, 94, 0.8), rgba(45, 212, 191, 0.8), rgba(59, 130, 246, 0.8));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .second-boxes {
     background-image:
         url("../assets/public/secondBox.webp"),
@@ -421,14 +427,16 @@ const scrollDown = () => {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .third-boxes {
     background-image:
         url("../assets/public/thirdBox.webp"),
-        linear-gradient( to bottom right, #facc15, #fb923c, #4ade80);
+        linear-gradient(to bottom right, #facc15, #fb923c, #4ade80);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .fourth-boxes {
     background-image:
         url("../assets/public/fourthBox.webp"),
@@ -446,44 +454,50 @@ const scrollDown = () => {
         no-repeat,
         no-repeat;
 }
+
 @media (max-width: 639px) {
-    .banner_title{
+    .banner_title {
         padding-left: 40px;
         padding-top: 100px;
     }
-    .banner_title span{
+
+    .banner_title span {
         font-size: 30px;
     }
-    .banner_des{
+
+    .banner_des {
         width: auto;
         padding-left: 40px;
         font-size: 15px;
     }
-    .banner_case{
+
+    .banner_case {
         height: 55vh;
     }
-    .case-contact{
+
+    .case-contact {
         padding: 0;
     }
 }
+
 @media (min-width: 640px) {
-    .banner_title{
+    .banner_title {
         padding-left: 40px;
     }
-    .banner_des{
+
+    .banner_des {
         padding-left: 40px;
     }
-    .case-contact{
+
+    .case-contact {
         padding: 50px;
     }
 }
 
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
-    .spacing{
+    .spacing {
         margin-left: 10rem;
     }
 }

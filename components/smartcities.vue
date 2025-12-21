@@ -13,9 +13,9 @@ import {
     Cpu,
     Palette,
     Check,
-    Wind, Building2, Volume2, Droplet, Activity,Grip,Bath, Mountain, TreePine, Leaf, TreeDeciduous, Home , Recycle, Map ,Drill ,Smartphone,Truck,Video,Trash,Code,User,Wifi
+    Wind, Building2, Volume2, Droplet, Activity, Grip, Bath, Mountain, TreePine, Leaf, TreeDeciduous, Home, Recycle, Map, Drill, Smartphone, Truck, Video, Trash, Code, User, Wifi
 } from "lucide-vue-next";
-import { Card} from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 // import blog from '@/public/blog.jpeg';
 
 const scrollDown = () => {
@@ -67,20 +67,20 @@ const reviewList: ReviewProps[] = [
 
 <template>
     <section class="banner_case flex align-items-center gap-8 -mt-5">
-        <div class="spacing lg:w-1/2">
+        <div class=" lg:w-1/2">
             <div class="banner_title">
-                <span class="text-white font-bold ">Low-Code IoT Platform for Modern <span class=" font-bold text-[#40eef3]">Smart Cities </span></span>
+                <span class="text-white font-bold ">Low-Code IoT Platform for Modern <span
+                        class=" font-bold text-[#40eef3]">Smart Cities </span></span>
 
             </div>
             <div class="banner_des">
                 <span class="mb-4">Launch integrated, scalable smart city solutions, faster and with less complexity.
-                                SyncN helps you build, connect, and manage IoT systems for cleaner, safer, and more intelligent urban environments.</span>
+                    SyncN helps you build, connect, and manage IoT systems for cleaner, safer, and more intelligent
+                    urban environments.</span>
             </div>
             <div>
-                <a
-                    href="/contact"
-                    class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-                >
+                <a href="/contact"
+                    class="contact items-center p-3 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]">
                     Contact Sales →
                 </a>
             </div>
@@ -90,31 +90,17 @@ const reviewList: ReviewProps[] = [
         </div>
     </section>
     <div class="scroll_arrow_wrapper">
-        <button
-            @click="scrollDown"
-            class="animate-bounce text-white"
-            aria-label="Scroll down"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-14 w-14"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="#40eef3"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                />
+        <button @click="scrollDown" class="animate-bounce text-white" aria-label="Scroll down">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="#40eef3">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
         </button>
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
         <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Environmental monitoring</span>
-        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Monitor air quality, water safety, noise levels, emissions,
+        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Monitor air quality, water
+            safety, noise levels, emissions,
             and climate conditions across the city with real-time dashboards and automated alerts.
         </div>
     </div>
@@ -137,57 +123,50 @@ const reviewList: ReviewProps[] = [
             </div>
             <div class="w-full lg:w-1/3 connect-internet space-y-3">
                 <p class="flex items-center gap-4">
-                    <Check class="w-8 h-8" style="color:#5572d3" /> Multi-protocol connectivity (LoRaWAN, cellular, WiFi)
+                    <Check class="w-8 h-8" style="color:#5572d3" /> Multi-protocol connectivity (LoRaWAN, cellular,
+                    WiFi)
                 </p>
             </div>
         </div>
 
         <section id="blog-section" class="w-full lg:w-full py-4 px-4">
-            <span class="lg:text-[30px] text-[25px] font-bold">SyncN powered IoT solutions for air and water quality monitoring</span>
+            <span class="lg:text-[30px] text-[25px] font-bold">SyncN powered IoT solutions for air and water quality
+                monitoring</span>
             <div class="grid gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                <Card
-                    v-for="review in reviewList"
-                    :key="review.name"
-                    class="group relative h-[390px] w-full dark:bg-card shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col border-0"
-                >
+                <div v-for="review in reviewList" :key="review.name"
+                    class="group relative h-[390px] w-full dark:bg-card  transition-shadow duration-300 flex flex-col border-0 ">
                     <a :href="review.link">
-                        <img
-                            :src="review.thumbnail"
-                            :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
-                        />
+                        <img :src="review.thumbnail" :alt="review.name" class="w-full object-cover rounded-xl " />
                     </a>
-                    <a
-                        :href="review.link"
-                        class="absolute bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md"
-                    >
+                    <a :href="review.link"
+                        class="absolute bottom-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md">
                         READ CASE STUDY →
                     </a>
-                </Card>
+                </div>
             </div>
             <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4">
                 <p class="text-xl lg:text-3xl font-bold pb-4">Environmental monitoring applications</p>
                 <div class="flex flex-wrap pt-8 gap-8">
-                    <div class="w-full lg:w-1/3 connect-internet space-y-3">
+                    <div class="w-full lg:w-1/3  connect-internet space-y-3">
                         <p class="flex items-center gap-4">
-                            <Wind class="w-8 h-8" style="color:#5572d3"/> Air quality measurement
+                            <Wind class="w-8 h-8" style="color:#5572d3" /> Air quality measurement
                         </p>
                         <p class="flex items-center gap-4">
-                            <Volume2 class="w-8 h-8" style="color:#5572d3"/> Noise pollution monitoring
+                            <Volume2 class="w-8 h-8" style="color:#5572d3" /> Noise pollution monitoring
                         </p>
                         <p class="flex items-center gap-4">
-                            <Flame class="w-8 h-8" style="color:#5572d3"/> Gas leak detection
+                            <Flame class="w-8 h-8" style="color:#5572d3" /> Gas leak detection
                         </p>
                     </div>
                     <div class="w-full lg:w-1/3 connect-internet space-y-3">
                         <p class="flex items-center gap-4">
-                            <Droplet class="w-8 h-8" style="color:#5572d3"/> Water quality tracking
+                            <Droplet class="w-8 h-8" style="color:#5572d3" /> Water quality tracking
                         </p>
                         <p class="flex items-center gap-4">
-                            <Building2  class="w-8 h-8" style="color:#5572d3"/> Emissions monitoring
+                            <Building2 class="w-8 h-8" style="color:#5572d3" /> Emissions monitoring
                         </p>
                         <p class="flex items-center gap-4">
-                            <Activity class="w-8 h-8" style="color:#5572d3"/> Seismology & early warning systems
+                            <Activity class="w-8 h-8" style="color:#5572d3" /> Seismology & early warning systems
                         </p>
                     </div>
                 </div>
@@ -197,9 +176,12 @@ const reviewList: ReviewProps[] = [
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Urban Greenery & Indoor Gardening</span>
-        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Build sustainable green installations powered by IoT.
-            SyncN connects sensors, pumps, controllers, and lighting into one system for automated plant care and environmental control.
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Urban Greenery & Indoor
+            Gardening</span>
+        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Build sustainable green
+            installations powered by IoT.
+            SyncN connects sensors, pumps, controllers, and lighting into one system for automated plant care and
+            environmental control.
         </div>
     </div>
     <div class="max-w-screen-xl mx-auto  gap-8 mb-12">
@@ -222,54 +204,46 @@ const reviewList: ReviewProps[] = [
         </div>
 
         <section id="blog-section" class="w-full lg:w-full py-4 px-4">
-            <span class="lg:text-[30px] text-[30px] font-bold">SyncN powered green IoT solutions for sustainable cities</span>
+            <span class="lg:text-[30px] text-[30px] font-bold">SyncN powered green IoT solutions for sustainable
+                cities</span>
             <div class="grid gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                <Card
-                    v-for="review in reviewList"
-                    :key="review.name"
-                    class="group relative h-[390px] w-full dark:bg-card shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col border-0"
-                >
+                <div v-for="review in reviewList" :key="review.name"
+                    class="group relative h-[390px] w-full dark:bg-card  transition-shadow duration-300 flex flex-col border-0 ">
                     <a :href="review.link">
-                        <img
-                            :src="review.thumbnail"
-                            :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
-                        />
+                        <img :src="review.thumbnail" :alt="review.name" class="w-full object-cover rounded-xl " />
                     </a>
-                    <a
-                        :href="review.link"
-                        class="absolute bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md"
-                    >
+                    <a :href="review.link"
+                        class="absolute bottom-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md">
                         READ CASE STUDY →
                     </a>
-                </Card>
+                </div>
             </div>
             <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4">
                 <p class="text-xl lg:text-3xl font-bold pb-4">Green City applications</p>
                 <div class="flex flex-wrap pt-8 gap-8">
                     <div class="w-full lg:w-1/3 connect-internet space-y-3">
                         <p class="flex items-center gap-4">
-                            <Grip class="w-8 h-8" style="color:#5572d3"/> Living walls & green pillars
+                            <Grip class="w-8 h-8" style="color:#5572d3" /> Living walls & green pillars
                         </p>
                         <p class="flex items-center gap-4">
-                            <Leaf class="w-8 h-8" style="color:#5572d3"/> Indoor vertical farms
+                            <Leaf class="w-8 h-8" style="color:#5572d3" /> Indoor vertical farms
                         </p>
                         <p class="flex items-center gap-4">
-                            <Bath class="w-8 h-8" style="color:#5572d3"/> Urban greenery installations
+                            <Bath class="w-8 h-8" style="color:#5572d3" /> Urban greenery installations
                         </p>
                         <p class="flex items-center gap-4">
-                            <Building2 class="w-8 h-8" style="color:#5572d3"/> Interior landscaping
+                            <Building2 class="w-8 h-8" style="color:#5572d3" /> Interior landscaping
                         </p>
                     </div>
                     <div class="w-full lg:w-1/3 connect-internet space-y-3">
                         <p class="flex items-center gap-4">
-                            <Mountain class="w-8 h-8" style="color:#5572d3"/> Micro forests
+                            <Mountain class="w-8 h-8" style="color:#5572d3" /> Micro forests
                         </p>
                         <p class="flex items-center gap-4">
-                            <TreeDeciduous  class="w-8 h-8" style="color:#5572d3"/> Green roofs
+                            <TreeDeciduous class="w-8 h-8" style="color:#5572d3" /> Green roofs
                         </p>
                         <p class="flex items-center gap-4">
-                            <TreePine class="w-8 h-8" style="color:#5572d3"/> Mobile vertical gardens
+                            <TreePine class="w-8 h-8" style="color:#5572d3" /> Mobile vertical gardens
                         </p>
                     </div>
                 </div>
@@ -279,8 +253,10 @@ const reviewList: ReviewProps[] = [
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Street Cleaning & Waste Management</span>
-        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Deploy and manage connected city equipment for cleaning,
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Street Cleaning & Waste
+            Management</span>
+        <div class="lg:text-[23px] text-[16px] text-start text-[#0f3045] mb-12 px-4 env-desc">Deploy and manage
+            connected city equipment for cleaning,
             waste collection, and street maintenance through one centralized console.
         </div>
     </div>
@@ -305,61 +281,60 @@ const reviewList: ReviewProps[] = [
         </div>
 
         <section id="blog-section" class="w-full lg:w-full py-4 px-4">
-            <span class="lg:text-[30px] text-[25px] font-bold">IoT-enabled municipal cleaning solutions running on SyncN</span>
+            <span class="lg:text-[30px] text-[25px] font-bold">IoT-enabled municipal cleaning solutions running on
+                SyncN</span>
             <div class="grid gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                <Card
-                    v-for="review in reviewList"
-                    :key="review.name"
-                    class="group relative h-[390px] w-full dark:bg-card shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col border-0"
-                >
+                <div v-for="review in reviewList" :key="review.name"
+                    class="group relative h-[390px] w-full dark:bg-card  transition-shadow duration-300 flex flex-col border-0 ">
                     <a :href="review.link">
-                        <img
-                            :src="review.thumbnail"
-                            :alt="review.name"
-                            class="w-full object-cover rounded-xl custom-img-class"
-                        />
+                        <img :src="review.thumbnail" :alt="review.name" class="w-full object-cover rounded-xl " />
                     </a>
-                    <a
-                        :href="review.link"
-                        class="absolute bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md"
-                    >
+                    <a :href="review.link"
+                        class="absolute bottom-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white border rounded-2xl px-4 py-2 shadow-md">
                         READ CASE STUDY →
                     </a>
-                </Card>
+                </div>
             </div>
             <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4">
                 <p class="text-xl lg:text-3xl font-bold pb-4">IoT applications for clean and safe cities</p>
-                <div class="flex flex-wrap pt-8 gap-8">
-                    <div class="w-full lg:w-1/3 connect-internet space-y-3">
+                <div class=" flex flex-wrap pt-8 gap-8">
+
+
+                    <div class=" w-full lg:w-1/3 connect-internet ">
                         <p class="flex items-center gap-4">
-                            <Recycle class="w-8 h-8" style="color:#5572d3"/> Waste bin level monitoring
+                            <Recycle class="w-8 h-8" style="color:#5572d3" /> Waste bin level monitoring
                         </p>
                         <p class="flex items-center gap-4">
-                            <Map class="w-8 h-8" style="color:#5572d3"/> Smart route planning
+                            <Map class="w-8 h-8" style="color:#5572d3" /> Smart route planning
                         </p>
                         <p class="flex items-center gap-4">
-                            <Drill class="w-8 h-8" style="color:#5572d3"/> Fleet & equipment monitoring
+                            <Drill class="w-8 h-8" style="color:#5572d3" /> Fleet & equipment monitoring
                         </p>
-                        <p class="flex items-center gap-4">
-                            <Eye class="w-8 h-8" style="color:#5572d3"/> Camera-enabled safety systems
-                        </p>
+                       
                     </div>
                     <div class="w-full lg:w-1/3 connect-internet space-y-3">
-                        <p class="flex items-center gap-4">
-                            <Smartphone class="w-8 h-8" style="color:#5572d3"/> Street cleaning automation
+                       <p class="flex items-center gap-4">
+                            <Eye class="w-8 h-8" style="color:#5572d3" /> Camera-enabled safety systems
+
                         </p>
                         <p class="flex items-center gap-4">
-                            <Truck  class="w-8 h-8" style="color:#5572d3"/> Waste asset management
+                            <Smartphone class="w-8 h-8" style="color:#5572d3" /> Street cleaning automation
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <Truck class="w-8 h-8" style="color:#5572d3" /> Waste asset management
                         </p>
                     </div>
                 </div>
             </div>
+
         </section>
+        
 
     </div>
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">What else you can build with SyncN</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">What else you can build with
+            SyncN</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4">
             <span>Universal IoT platform for a variety of Smart City applications.</span>
             <div class="flex monitor pt-8 gap-8">
@@ -405,11 +380,10 @@ const reviewList: ReviewProps[] = [
     <div class="gap-8 mb-12">
         <div class="case-contact">
             <div class="max-w-screen-xl mx-auto gap-8 mb-12 px-4">
-                <span class="text-[52px] text-white font-bold block py-8">Need <span class="text-[#40eef3]">IoT software</span>for your Smart City product?</span>
-                <a
-                    href="/contact"
-                    class="contact items-center p-3 border rounded-4xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]"
-                >
+                <span class="text-[52px] text-white font-bold block py-8">Need <span class="text-[#40eef3]">IoT
+                        software</span>for your Smart City product?</span>
+                <a href="/contact"
+                    class="contact items-center p-3 border rounded-3xl gap-1 readmore hover:opacity-80 transition mt-2 bg-[#40eef3]">
                     Contact US →
                 </a>
             </div>
@@ -418,7 +392,8 @@ const reviewList: ReviewProps[] = [
 
 
     <div class="max-w-screen-xl mx-auto gap-8 mb-12">
-        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Make <span class="text-[#40eef3]">IoT development</span> easier with SyncN</span>
+        <span class="lg:text-[52px] text-[30px] text-start font-bold block mt-8 px-4">Make <span
+                class="text-[#40eef3]">IoT development</span> easier with SyncN</span>
         <div class="lg:text-[23px] text-[12px] text-start mb-12 px-4 env-desc">
             <span>Build, manage, and scale your IoT products from one unified platform.
                 SyncN gives you every tool you need to accelerate development and simplify operations.</span>
@@ -438,7 +413,7 @@ const reviewList: ReviewProps[] = [
                     Ready-to-use hardware integrations with robust IoT APIs.
                 </p>
             </div>
-            <div >
+            <div>
                 <Palette width="30" height="30" class="mb-4 text-[#5572d3]" />
                 <span class="font-semibold text-2xl mb-8 block">Web & Mobile Applications</span>
                 <p class="mt-2">
@@ -453,14 +428,14 @@ const reviewList: ReviewProps[] = [
                 </p>
             </div>
 
-            <div >
+            <div>
                 <User width="30" height="30" class="mb-4 text-[#5572d3]" />
                 <span class="font-semibold text-2xl mb-8 block">User management</span>
                 <p class="mt-2">
                     Multi-level hierarchical access for municipalities, contractors, and operators.
                 </p>
             </div>
-            <div >
+            <div>
                 <Wifi width="30" height="30" class="mb-4 text-[#5572d3]" />
                 <span class="font-semibold text-2xl mb-8 block">Connectivity management</span>
                 <p class="mt-2">
@@ -484,13 +459,15 @@ const reviewList: ReviewProps[] = [
     width: 100%;
     margin-top: -3.5rem;
 }
+
 .scroll_arrow_wrapper {
     display: flex;
     justify-content: center;
     margin-top: -5rem;
     margin-bottom: 5rem;
 }
-.banner_title{
+
+.banner_title {
     display: flex;
     object-fit: fill;
     width: 100%;
@@ -501,10 +478,12 @@ const reviewList: ReviewProps[] = [
     overflow: visible;
     gap: 1rem;
 }
-.banner_title span{
+
+.banner_title span {
     font-size: 51px;
 }
-.banner_des{
+
+.banner_des {
     width: 80%;
     margin-top: 24px;
     padding-left: 114px;
@@ -520,44 +499,53 @@ const reviewList: ReviewProps[] = [
     margin-top: 159px;
     width: 500px;
 }
-.readmore:hover{
+
+.readmore:hover {
     background: #2d55a4;
     color: white;
 }
-.case-contact{
+
+.case-contact {
     background: url("../assets/public/caseStudies.webp");
     background-size: cover;
     height: 530px;
     padding: 8em 0;
 }
-.contact{
+
+.contact {
     color: white;
     margin-left: 40px;
 }
-.connect-internet{
+
+.connect-internet {
     gap: 3rem;
     display: grid;
 }
-.list-disc{
+
+.list-disc {
     list-style: disc;
     padding-left: 2rem;
     padding-bottom: 2rem;
 }
+
 .list-disc li::marker {
     color: #5572d3;
 }
-.contact-sales{
+
+.contact-sales {
     color: white;
     margin-left: 15px;
 }
+
 .first-boxes {
     background-image:
         url("../assets/public/four-boxes.webp"),
-        linear-gradient(to bottom right, rgba(34,197,94,0.8), rgba(45,212,191,0.8), rgba(59,130,246,0.8));
+        linear-gradient(to bottom right, rgba(34, 197, 94, 0.8), rgba(45, 212, 191, 0.8), rgba(59, 130, 246, 0.8));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .second-boxes {
     background-image:
         url("../assets/public/secondBox.webp"),
@@ -566,14 +554,16 @@ const reviewList: ReviewProps[] = [
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .third-boxes {
     background-image:
         url("../assets/public/thirdBox.webp"),
-        linear-gradient( to bottom right, #facc15, #fb923c, #4ade80);
+        linear-gradient(to bottom right, #facc15, #fb923c, #4ade80);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .fourth-boxes {
     background-image:
         url("../assets/public/fourthBox.webp"),
@@ -591,60 +581,70 @@ const reviewList: ReviewProps[] = [
         no-repeat,
         no-repeat;
 }
-.env-desc{
+
+.env-desc {
     width: 60%;
 }
-.text-white{
+
+.text-white {
     color: white;
 }
 
 @media (max-width: 639px) {
-    .banner_title{
+    .banner_title {
         padding-left: 40px;
         padding-top: 100px;
     }
-    .banner_title span{
+
+    .banner_title span {
         font-size: 30px;
     }
-    .banner_des{
+
+    .banner_des {
         width: auto;
         padding-left: 40px;
         font-size: 15px;
     }
-    .banner_case{
+
+    .banner_case {
         height: 55vh;
     }
-    .case-contact{
+
+    .case-contact {
         padding: 0;
     }
-    .monitor{
+
+    .monitor {
         flex-wrap: wrap;
     }
-    .env-desc{
+
+    .env-desc {
         width: 90%;
     }
-    .group{
+
+    .group {
         height: 500px;
     }
 }
+
 @media (min-width: 640px) {
-    .banner_title{
+    .banner_title {
         padding-left: 40px;
     }
-    .banner_des{
+
+    .banner_des {
         padding-left: 40px;
     }
-    .case-contact{
+
+    .case-contact {
         padding: 50px;
     }
 }
 
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 1024px) {
-    .spacing{
+    .spacing {
         margin-left: 10rem;
     }
 }

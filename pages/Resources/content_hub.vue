@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import SingleContentHub from '~/components/SingleContentHub.vue'
+import ContentHub from '~/components/ContentHub.vue'
 </script>
 
 <template>
 
-  <SingleContentHub />
+  <ContentHub />
 </template>
