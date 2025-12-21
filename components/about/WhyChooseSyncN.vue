@@ -78,12 +78,10 @@ const features = [
           v-for="(feature, index) in features"
           :key="feature.title"
           tag="div"
-          class="relative p-8 rounded-3xl bg-white/80 dark:bg-gray-800/80 border border-gray-200/50 dark:border-gray-700/50"
+          class="relative p-8 rounded-3xl bg-white/80 dark:bg-gray-800/80 border border-gray-200/50 dark:border-gray-700/50 transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.02]"
           :initial="{ y: 20, opacity: 0 }"
           :animate="{ y: 0, opacity: 1 }"
           :transition="{ delay: index * 0.15, duration: 0.5 }"
-          v-motion-hover
-          :hover="{ scale: 1.05, y: -5 }"
         >
           <div class="relative mb-6 flex items-start justify-between">
             <div class="relative">
