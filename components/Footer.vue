@@ -2,11 +2,10 @@
 import Separator from "@/ui/separator/Separator.vue";
 import logoLight from "@/assets/public/light-logo.svg";
 import logoDark from "@/assets/public/dark-logo.svg";
-import { useColorMode } from "@vueuse/core";
+import { useAppearance } from "@/composables/useAppearance";
 import vision from "@/assets/public/vision2030.png";
 
-const mode = useColorMode();
-mode.value = "light";
+const { appearance } = useAppearance();
 </script>
 
 <template>
@@ -29,7 +28,7 @@ mode.value = "light";
           <a href="#" class="flex font-bold items-center max-sm:justify-center">
             <img
               class="w-[50%] max-lg:w-[60%] max-md:w-[70%] max-sm:w-[60%] rounded-lg"
-              :src="mode === 'light' ? logoDark : logoLight"
+              :src="appearance === 'light' ? logoDark : logoLight"
               alt="logo"
             />
           </a>
