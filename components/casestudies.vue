@@ -371,7 +371,7 @@ const smartHome: ReviewProps[] = [
     background: url("../assets/public/caseStudies.webp");
     height: 40rem;
     width: 100%;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
 }
 .scroll_arrow_wrapper {
     display: flex;

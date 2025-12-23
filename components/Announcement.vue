@@ -5,9 +5,10 @@ const { appearance } = useAppearance();
 </script>
 
 <template>
-    <section class="relative overflow-hidden py-2 flex items-center justify-center">
+    <section class="relative overflow-hidden py-2 flex items-center justify-center text-center " style="    justify-content: center
+">
         <div
-            class="absolute inset-0 overflow-hidden moving-gradient"
+            class="absolute inset-0 overflow-hidden moving-gradient  "
             :class="{
             'mix-blend-darken': appearance === 'light',
             'mix-blend-color-dodge': appearance === 'dark'
@@ -24,7 +25,7 @@ const { appearance } = useAppearance();
         </div>
 
         <div
-            class="relative z-10 text-sm text-center md:text-lg lg:text-lg sm:text-sm"
+            class="relative z-10 text-sm text-center  ali md:text-lg lg:text-lg sm:text-sm"
             :class="appearance === 'light' ? 'text-black' : 'text-white backdrop-blur-md'"
         >
             Smart Elements by SyncN — your IoT experts — See you at Cityscape Riyadh.

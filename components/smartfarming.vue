@@ -228,7 +228,7 @@ const scrollDown = () => {
     background: url('../assets/public/caseStudies.webp');
 
     width: 100%;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
 }
 .scroll_arrow_wrapper {
     display: flex;

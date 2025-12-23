@@ -33,7 +33,7 @@ const scrollDown = () => {
 </script>
 
 <template>
-    <section class="banner_case flex align-items-center gap-8 -mt-5">
+    <section class="banner_case flex align-items-center gap-8 -mt-5 ">
         <div class="md:w-full">
             <div class="spacing banner_title">
                 <span class="text-white font-bold ">Make Your Home <span
@@ -331,7 +331,7 @@ const scrollDown = () => {
 .banner_case {
     background: url("../assets/public/caseStudies.webp");
     width: 100%;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
 }
 
 .scroll_arrow_wrapper {

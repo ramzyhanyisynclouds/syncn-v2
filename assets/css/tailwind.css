@@ -79,4 +79,14 @@
 	}
 }
 
+/* ///////// */
+@layer base {
+  html {
+    transition: none !important;
+  }
 
+  html.dark body,
+  html:not(.dark) body {
+    transition: none !important;
+  }
+}

@@ -90,7 +90,7 @@ const ResourcesList: ResourcesProps[] = [
   ]">
     <NuxtLink to="/" class="flex items-center text-lg font-bold">
       <img
-        class="img-border-animation relative mr-auto flex h-auto items-center rounded-lg w-28 sm:w-32 md:w-40 lg:w-48"
+        class="img-border-animation relative mr-auto flex h-auto items-center rounded-lg w-28 sm:w-32 md:w-40 "
         :src="appearance === 'light' ? logoDark : logoLight" alt="logo" />
     </NuxtLink>
 
@@ -341,12 +341,12 @@ details[open] .accordion-content {
 summary::-webkit-details-marker { display: none; }
 summary::marker { content: ""; }
 /* أضف ده تحت الـ styles الموجودة */
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
   .group {
     max-height: 380px;
     overflow-y: auto;
   }
-}
+} */
 
 
 </style>

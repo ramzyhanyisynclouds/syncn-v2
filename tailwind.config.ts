@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class', // 🔥 مهم جدًا
+
   content: [
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
@@ -10,6 +12,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -44,13 +47,19 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        
       },
       borderRadius: {
         lg: '0.5rem',
         md: '0.375rem',
         sm: '0.25rem',
       },
+      
     },
+    
   },
+  
   plugins: [],
+
+  
 }
